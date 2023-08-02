@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+SET UP 1 REDUX (TẠO REDUX)
+B0: npm i redux react-redux
+B1: tạo 1 folder store
+B2: store => index.js và rootReducer.js
+B3: index.js => tạo 1 store từ createStore
+B4: rootReducer : tạo rootReducer => từ hàm combinereducers
+B5: vào index.js(của nhánh chính) => lấy ra Provider từ react-redux và bọc lại toàn bộ component App
