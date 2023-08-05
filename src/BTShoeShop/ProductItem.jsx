@@ -12,7 +12,9 @@ function ProductItem({giay}) {
         <h5>{giay.name}</h5>
         <p className="mt-3">{giay.price}$</p>
         <div className="mt-3 d-flex justify-content-between">
-          <button className="btn btn-success">Add To Cart</button>
+          <button className="btn btn-success" onClick={() =>{
+            dispatch(baiTapShoeShopAction.handleCarts(giay))
+          }}>Add To Cart</button>
           <button className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() =>{
             dispatch(baiTapShoeShopAction.handleProductDetail(giay))
           }}>Detail</button>
